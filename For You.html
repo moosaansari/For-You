@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine?</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce1e1;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        h1 {
+            color: #ff66b2;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .paragraph {
+            font-size: 1.5em;
+            color: #e6007e;
+            margin-top: 20px;
+            font-style: italic;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+        }
+        .button {
+            background-color: #ff66b2;
+            color: white;
+            font-size: 1.5em;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff3385;
+        }
+        .button.no {
+            background-color: #ff9999;
+        }
+        .no-move {
+            position: relative;
+            transition: 1s;
+        }
+        .footer {
+            font-size: 0.8em;
+            color: #555;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Will You Be Mine? ❤️</h1>
+    <p>Hey, I have a question for you... 😇</p>
+
+    <div class="button-container">
+        <button class="button yes" onclick="acceptProposal()">Yes</button>
+        <button class="button no no-move" onclick="declineProposal()">No</button>
+    </div>
+
+    <div id="quote-container" style="display: none;">
+        <p class="paragraph">
+            From the very first moment I saw you, something in my heart shifted. I didn t know it then, but I was meeting someone who would come to mean more to me than I ever imagined. You have this incredible way of making everything better just by being present. The sound of your voice, the warmth of your smile, the sparkle in your eyes—it all stays with me long after the moment has passed. It’s like you have a magical way of making ordinary things extraordinary. I find myself thinking about you all the time, imagining the moments we could share together, the adventures we could go on, the laughter we could fill our days with.I can’t help but wonder what the future holds, but one thing I’m sure of is that I want you in it. More than anything, I want to walk beside you through life, through both the good times and the challenging ones. You’ve shown me what it means to truly care about someone, and I know I would give you all of my love, support, and devotion. I admire so many things about you—your kindness, your strength, your heart. There no one quite like you, and every day I feel more grateful to know you. You bring out the best in me, and I can only hope I can do the same for you.I m not asking for anything other than the chance to show you just how much you mean to me. I want to be the one who makes you smile when you're down, the one who holds your hand when you're afraid, the one who supports your dreams no matter how big they are. I want to share everything with you—the simple moments and the grand adventures. I want to create a life where every day we build something stronger, something more beautiful, something full of love and joy. My heart is open, and it’s yours if you want it. I can t imagine a future without you in it, and I would do anything to make sure you know how much I care.So here I am, putting my heart on the line, hoping youll take a chance on us, on me, on something that could be so beautiful. Will you be mine, and lets make this incredible journey together?*
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>Created with love by your secret admirer 💌</p>
+    </div>
+
+    <script>
+        function acceptProposal() {
+            document.getElementById("quote-container").style.display = "block";
+            document.querySelector(".button-container").style.display = "none"; // Hide buttons
+        }
+
+        function declineProposal() {
+            let noButton = document.querySelector(".button.no");
+            noButton.style.position = "absolute";
+            noButton.style.top = `${Math.random() * 80 + 20}%`; // Moves the button randomly
+            noButton.style.left = `${Math.random() * 80 + 10}%`; // Moves the button randomly
+            noButton.style.transition = "all 1s ease-in-out";
+        }
+    </script>
+
+</body>
+</html>
