@@ -51,5 +51,5 @@ Feel free to contribute or reach out for collaboration!
 
 ---
 
-*Created with ❤️ by [Your Name]*  
+*Created with ❤️ by Moosa*  
 
