@@ -2,44 +2,194 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="The official website for The Little Taco Shop">
-    <title>The Little Taco Shop</title>
-    <link rel="icon" href="image copy 3.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The official website for The Little Taco Shop" />
+  <title>The Little Taco Shop</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+  header {
+    background-color: #e76f51;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  figure {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  img {
+    width: 300px;
+    border-radius: 12px;
+  }
+
+  main {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    color: #e76f51;
+    margin-bottom: 1rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f4a261;
+    color: white;
+  }
+
+  tfoot td {
+    background-color: #e9c46a;
+    font-weight: bold;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  a {
+    color: #e76f51;
+  }
+</style>
+
+  </style>
 </head>
 
-<body>
-    <header>
-        <h1>Welcome to The Little Taco Shop</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About <abbr title="The Little Taco Shop">LTS</abbr></a></li>
-                <li><a href="#menu">Our Menu <abbr title="The Little Taco Shop">LTS</abbr></a></li>
-                <li><a href="hours.html">Store Hours <abbr title="The Little Taco Shop">LTS</abbr></a></li>
-                <li><a href="contact.html">Contact Us <abbr title="The Little Taco Shop">LTS</abbr></a></li>
-            </ul>
-        </nav>
-        <figure>
-            <img src="img/image.png" alt="Tacos and Drink" title="We love tacos" width="400" height="267">
-        <figcaption>
-            Tacos and a Drink
-        </figcaption>
-        </figure>
-    </header>
-    <hr>
-    <main>
-        <article id="about">
-            <h2>About <abbr title="The Little Taco Shop">LTS</abbr></h2>
-        <p>
-            <abbr title="The Little Taco Shop">LTS</abbr>
-            was founded in <time datetime="2025">2025</time>. Our shop was built from a<strong>love of tacos</strong> 🌮🌮🌮 . We hope our shop adds a unique and interesting place to our little town.
-        </p>   
-        </article>
-    </main>
-    <hr>
-    <footer>
-        <p>Copyright &copy; The Little Taco Shop</p>
-    </footer>
+<body id="top">
+  <header>
+    <h1>The Little Taco Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="hours.html">Hours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <figure>
+      <img src="img/image.png" alt="Delicious tacos and drink" />
+      <figcaption>Tacos and a Drink</figcaption>
+    </figure>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        <strong>The Little Taco Shop (LTS)</strong> was founded in <time datetime="2025">2025</time> out of a love for tacos 🌮.
+        We serve up delicious tacos made with fresh ingredients and a passion for flavor.
+      </p>
+      <aside>
+        <h3>Taco Trivia</h3>
+        <details>
+          <summary>When did tacos first appear in the U.S.?</summary>
+          <p>
+            Taco historian Jeffrey M. Pilcher notes that tacos were first mentioned in a U.S. newspaper in <time datetime="1905">1905</time>.
+          </p>
+        </details>
+      </aside>
+    </section>
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <table>
+        <caption>Taco Selections</caption>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Qty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">Soft Tacos</td>
+            <td>1</td>
+            <td>$2.00</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>$3.50</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>$4.50</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Crunchy Tacos</td>
+            <td>1</td>
+            <td>$1.50</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>$2.50</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>$3.25</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Chips &amp; Salsa - $2.00</td>
+          </tr>
+        </tfoot>
+      </table>
+      <p><a href="#top"> &uarr; Back To Top</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 The Little Taco Shop. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
