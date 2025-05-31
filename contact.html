@@ -1,39 +1,116 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Contact information for The Little Taco Shop">
-    <title>Contact us -LTS</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - The Little Taco Shop</title>
+  <style>
+/* General body and text styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
 
+/* Header styling */
+header {
+  background-color: #e76f51;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+/* Main container */
+main {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Section headings */
+h2 {
+  color: #e76f51;
+  margin-bottom: 1rem;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  resize: vertical;
+}
+
+/* Button styles */
+button {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  border: none;
+  background-color: #2a9d8f;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21867a;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+</style>
+</head>
 <body>
-    <header>
-        <h1>Conatct us</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home <abbr title="The Little Taco Shop">LTS</abbr></a></li>
-                <li><a href="/#about">About <abbr title="The Little Taco Shop">LTS</abbr></a></li>
-                <li><a href="/#menu">Our Menu <abbr title="The Little Taco Shop">LTS</abbr></a></li>
-                <li><a href="hours.html">Our Hours <abbr title="The Little Taco Shop">LTS</abbr></a></li>
-            </ul>
-        </nav>
-        <figure>
-            <img src="img/image copy 2.png.png" alt="Little Tacos Shop" title="Tacos ready to Eat" width="400" height="260">
-        <figcaption>
-            Little Taco Shop  
-        </figcaption>
-        </figure>
-    </header>
-    <hr>
-    <main>
-        <!-- Our Content-->
-    </main>
-    <hr>
-    <footer>
-        <p>Copyright &copy; The Little Taco Shop</p>
-    </footer>
+  <header>
+    <h1>Contact The Little Taco Shop</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>We'd love to hear from you!</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Little Taco Shop</p>
+  </footer>
 </body>
 </html>
